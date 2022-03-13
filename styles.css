@@ -3,9 +3,10 @@
 :root {
     --bg-gray: #ddd;
     --text-gray:#4a4a4a;
-    --color-primary: #4d41c0;
     --white: #fff;
     --text-light-gray: #aaa;
+    --star-yellow: #FFBB3A;
+    --dodger-blue: #4682B4;
 }
 
 * {
@@ -24,7 +25,7 @@ html, body {
 
 
 header {
-    background-color: var(--color-primary);
+    background-color: var(--dodger-blue);
     color: var(--white);
     height: 60px;
     display: flex;
@@ -62,7 +63,7 @@ a, a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 0;
+    padding: 40px 10px;
 }
 
 .dsmovie-card {
@@ -82,7 +83,7 @@ a, a:hover {
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovie-card-description h3 {
@@ -92,10 +93,33 @@ a, a:hover {
     text-align: center;
 }
 
+.dsmovie-card-description-botton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-card-description-botton h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.dsmovie-card-description-botton img {
+    width: 22px;
+}
+
+.dsmovie-card-description-botton p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+}
+
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
     height: 40px;
-    background-color: var(--color-primary);
+    background-color: var(--dodger-blue);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -112,7 +136,7 @@ a, a:hover {
 }
 
 
-dsmovie-form-description {
+.dsmovie-form-description {
     background-color: var(--white);
     padding: 20px;
     display: flex;
@@ -126,7 +150,7 @@ dsmovie-form-description {
 }
 
 .dsmovie-form-description h3 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
